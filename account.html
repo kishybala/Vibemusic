@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starbucks Account</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar Start -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <logo><h1>Starbucks</h1></logo>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="Reward.html">Gift</a></li>
+      <li><a href="account.html">Account</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- Navbar End -->
+
+
+
+  <main class="account-container">
+    <h1>Welcome to Your Account</h1>
+
+    <div class="account-form-container">
+      <form id="loginForm" class="account-form">
+        <h2>Login</h2>
+        <label for="emailLogin">Email</label>
+        <input type="email" id="emailLogin" name="emailLogin" required placeholder="Enter your email" />
+
+        <label for="passwordLogin">Password</label>
+        <input type="password" id="passwordLogin" name="passwordLogin" required placeholder="Enter your password" />
+
+        <button type="submit">Login</button>
+        <p class="toggle-msg">Don't have an account? <span id="showSignup" class="toggle-link">Sign up here</span></p>
+      </form>
+
+      <form id="signupForm" class="account-form hidden">
+        <h2>Sign Up</h2>
+        <label for="nameSignup">Name</label>
+        <input type="text" id="nameSignup" name="nameSignup" required placeholder="Enter your name" />
+
+        <label for="emailSignup">Email</label>
+        <input type="email" id="emailSignup" name="emailSignup" required placeholder="Enter your email" />
+
+        <label for="passwordSignup">Password</label>
+        <input type="password" id="passwordSignup" name="passwordSignup" required placeholder="Create a password" />
+
+        <button type="submit">Sign Up</button>
+        <p class="toggle-msg">Already have an account? <span id="showLogin" class="toggle-link">Login here</span></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<footer class="starbucks-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h1><b>Starbucks</b></h1>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h3>About Us</h3>
+        <p>Our Heritage</p>
+        <p>Our Coffee</p>
+        <p>Stories and News</p>
+        <p>Investor Relations</p>
+      </div>
+      <div>
+        <h3>Careers</h3>
+        <p>Culture and Values</p>
+        <p>Inclusion, Diversity, and Equity</p>
+        <p>College Achievement Plan</p>
+      </div>
+      <div>
+        <h3>Social Impact</h3>
+        <p>People</p>
+        <p>Planet</p>
+        <p>Environmental and Social Impact Reporting</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <p>Gift Cards</p>
+        <p>Store Locator</p>
+        <p>Contact Us</p>
+        <p>FAQs</p>
+      </div>
+    </div>
+    <i>jaya</i>
+
+    
+    <p class="footer-copy">© 2025 Starbucks Coffee Company. All rights reserved.</p>
+  </div>
+</footer>
