@@ -640,7 +640,6 @@ nav ul li.active {
 }
 
 
-}
 
 /* Reset & Body */
 * {
@@ -710,4 +709,43 @@ h1 {
   }
 }
 
+
+
+.hidden {
+  display: none;
+}
+
+.account-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Zilla Slab', serif;
+}
+
+.account-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.account-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.account-form button {
+  background-color: #00704a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.toggle-link {
+  color: #00704a;
+  cursor: pointer;
+  font-weight: bold;
+}
 

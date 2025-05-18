@@ -100,3 +100,56 @@ if (showSignup && showLogin && loginForm && signupForm) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loginForm = document.getElementById("loginForm");
+  const signupForm = document.getElementById("signupForm");
+  const showSignup = document.getElementById("showSignup");
+  const showLogin = document.getElementById("showLogin");
+
+  // Show signup form
+  showSignup.addEventListener("click", () => {
+    loginForm.classList.add("hidden");
+    signupForm.classList.remove("hidden");
+  });
+
+  // Show login form
+  showLogin.addEventListener("click", () => {
+    signupForm.classList.add("hidden");
+    loginForm.classList.remove("hidden");
+  });
+
+  // Signup form submit
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("nameSignup").value.trim();
+    const email = document.getElementById("emailSignup").value.trim();
+    const password = document.getElementById("passwordSignup").value.trim();
+
+    if (name && email && password) {
+      alert(`🎉 Signup successful! Now login.`);
+      // Reset form
+      signupForm.reset();
+      // Switch to login form
+      signupForm.classList.add("hidden");
+      loginForm.classList.remove("hidden");
+    } else {
+      alert("Please fill all fields.");
+    }
+  });
+
+  // Login form submit
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = document.getElementById("emailLogin").value.trim();
+    const password = document.getElementById("passwordLogin").value.trim();
+
+    if (email && password) {
+      alert("✅ Login successful (dummy login)");
+      loginForm.reset();
+    } else {
+      alert("Please enter email and password.");
+    }
+  });
+});
